@@ -1,5 +1,6 @@
 package com.ren.simpleintent.processor;
 
+import com.ren.simpleintent.Constant;
 import com.ren.simpleintent.annotion.SimpleIntent;
 import com.ren.simpleintent.entity.SimpleIntentEntity;
 import com.squareup.javapoet.ClassName;
@@ -197,7 +198,9 @@ public class SimpleIntentProcessor extends AbstractProcessor {
     }
 
     private void note(String msg) {
-        mMessager.printMessage(Diagnostic.Kind.NOTE, msg);
+        if (Constant.DEBUG){
+            mMessager.printMessage(Diagnostic.Kind.NOTE, msg);
+        }
     }
 
 
