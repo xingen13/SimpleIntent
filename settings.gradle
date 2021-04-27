@@ -1,0 +1,3 @@
+include ':simpleintent'
+include ':app'
+rootProject.name = "SimpleIntent"
