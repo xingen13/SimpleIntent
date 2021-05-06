@@ -1,0 +1,3 @@
+# simpleIntent
+
+针对Activity的跳转，进行了简化及统一处理，通过注解标记Activity，统一自动生成Intent的跳转的工具类IntentManager。
