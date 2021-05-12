@@ -6,6 +6,8 @@
 检查根目录下的build.gradle文件是否有 mavenCentral()仓库，没有则添加
 
 implementation 'io.github.xingen13:simpleintent:1.0.1'
+
+
 annotationProcessor 'io.github.xingen13:simpleintent:1.0.1'
 
 # 使用
@@ -14,10 +16,13 @@ annotationProcessor 'io.github.xingen13:simpleintent:1.0.1'
 public class Test1Activity extends Activity {
 }
 
+
 SimpleIntent标记的类会生成startActivity跳转方法；paramTypes,flags参数非必传
+
 
 @ResultIntent(paramTypes = {int.class,String.class},flags = Intent.FLAG_ACTIVITY_CLEAR_TOP,requestCode = 1)
 public class Test2Activity extends Activity {  
 }
+
 
 ResultIntent标记的类会生成startActivityForResult跳转方法；paramTypes,flags参数非必传，requestCode参数为必传
