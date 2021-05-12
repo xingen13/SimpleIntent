@@ -2,6 +2,11 @@
 
 针对Activity的跳转，进行了简化及统一处理，通过注解标记Activity，统一自动生成Intent的跳转的工具类IntentManager。
 
+# 导入
+检查根目录下的build.gradle文件是否有 mavenCentral()仓库，没有则添加
+
+implementation 'io.github.xingen13:simpleintent:1.0.1'
+annotationProcessor 'io.github.xingen13:simpleintent:1.0.1'
 
 # 使用
 
