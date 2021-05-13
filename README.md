@@ -17,7 +17,7 @@ public class Test1Activity extends Activity {
 }
 
 
-SimpleIntent标记的类会生成startActivity跳转方法；paramTypes,flags参数非必传
+@SimpleIntent标记的Activity会在IntentManager类里生成startActivity跳转方法；paramTypes,flags参数非必传
 
 
 @ResultIntent(paramTypes = {int.class,String.class},flags = Intent.FLAG_ACTIVITY_CLEAR_TOP,requestCode = 1)
@@ -25,4 +25,9 @@ public class Test2Activity extends Activity {
 }
 
 
-ResultIntent标记的类会生成startActivityForResult跳转方法；paramTypes,flags参数非必传，requestCode参数为必传
+@ResultIntent标记的Activity会生IntentManager类里成startActivityForResult跳转方法；paramTypes,flags参数非必传，requestCode参数为必传
+
+IntentManager.startTest1Activity();
+
+
+
