@@ -5,10 +5,10 @@
 # 导入
 检查根目录下的build.gradle文件是否有 mavenCentral()仓库，没有则添加
 
-implementation 'io.github.xingen13:simpleintent:1.0.1'
+implementation 'io.github.xingen13:simpleintent:1.0.2'
 
 
-annotationProcessor 'io.github.xingen13:simpleintent:1.0.1'
+annotationProcessor 'io.github.xingen13:simpleintent:1.0.2'
 
 # 使用
 
